@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Content Panel"
+        android:background="@color/purple"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From"
+        android:id="@+id/from"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        android:id="@+id/to"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:id="@+id/price"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:id="@+id/startTime"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:id="@+id/endTime"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:id="@+id/date"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/usubmit"
+        android:background="@color/purple"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KandyColomboAddBuses"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/black"
+        android:text="Back"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".GalleColomboAddBuses">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/custom_edittext"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kandy-Colombo Add Buses"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fromEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:hint="From"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+
+                <EditText
+                    android:id="@+id/toEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:hint="To"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:hint="Price"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:id="@+id/rTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:hint="Start Time"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:id="@+id/tTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:hint="End Time"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dateEditText"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawablePadding="8dp"
+                        android:hint="Date"
+                        android:inputType="textEmailAddress"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/cardview_dark_background" />
+
+
+                    <ImageButton
+                        android:id="@+id/calendarButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/saveGCButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/purple"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

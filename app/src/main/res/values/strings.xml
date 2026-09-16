@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdminTranspo</string>
+    <string name="app_version">V 1.0.0</string>
+    <string name="app_copy">@ Transpo Admin 2023</string>
+</resources>
